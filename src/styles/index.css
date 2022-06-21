@@ -17,6 +17,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.Card:hover {
+  border: 1px solid #ccc;
+}
 .Card--body {
   width: 60%;
 }
@@ -26,8 +29,13 @@
 
 .Card__button {
   background: #fff;
-  border: 1px solid #920dbb;
-  color: #920dbb;
+  border: 1px solid crimson;
+  color: crimson;
+}
+
+.Card__button:hover {
+  background: crimson;
+  color: #fff;
 }
 
 .Form {
