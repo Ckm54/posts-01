@@ -6,7 +6,7 @@ import { IPost } from '../../types/index'
 
 const API_URL: string = 'https://jsonplaceholder.typicode.com/posts'
 
-export default function Home({posts,}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Home({posts}: InferGetStaticPropsType<typeof getStaticProps>) {
   const [postList, setPostList] = React.useState(posts)
 
   const addPost = async (e: React.FormEvent, formData: IPost) => {

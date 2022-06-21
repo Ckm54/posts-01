@@ -8,12 +8,12 @@ type Props = {
 
 const Post: React.FC<Props> = ({post, deletePost}) => {
   return (
-    <div className="card">
-      <div className="card--body">
-        <h1 className="card--body-title">{post.title}</h1>
-        <p className="card--body-text">{post.body}</p>
+    <div className="Card">
+      <div className="Card--body">
+        <h1 className="Card--body-title">{post.title}</h1>
+        <p className="Card--body-text">{post.body}</p>
       </div>
-      <button className="card__button" onClick={() => deletePost(post.id)}>
+      <button className="Card__button" onClick={() => deletePost(post.id)}>
         Delete
       </button>
     </div>
